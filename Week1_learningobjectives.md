@@ -1,8 +1,9 @@
 # R Programming - Week 1 Learning Objectives
 
-* Install the R and RStudio software packages
-* Download and install the swirl package for R
+* ~~Install the R and RStudio software packages~~ 
+* ~~Download and install the swirl package for R~~
 * Describe the history of the S and R programming lectures
+
 What are Fortran libraries?
 Originally a statistical envrionment for routines.
 In 1988 the system was rewritten in C.
@@ -15,6 +16,7 @@ For Chambers, the S (later on, R) environment, should be amenable to basic analy
 
 R itself was developed onwards from 1991. 
 In 1997 the R Core Group (which includes S programmers) was created.
+
 #### Main features
 * Semantics are "superficially similar to S";
 * Runs on almost any standard computing platform;
@@ -36,7 +38,12 @@ In 1997 the R Core Group (which includes S programmers) was created.
 * Not ideal for all situations. 
 
 * Describe the differences between atomic data types
+ 
+ There are 4 atomic data types in R: **real numbers**, **integers**, **characters** and **logical**. The first two are pretty self-explanatory, so let's just say that *character* data is written in character strings suchs "this a string" and *logical* data is given in boolean values (TRUE/FALSE, T/F, 0/1).
+ 
 * Execute basic arithmetic operations
+
+
 * Subset R objects using the "[", "[[", and "$" operators and logical vectors
 * Describe the explicit coercion feature of R
 * Remove missing (NA) values from a vector
