@@ -46,4 +46,11 @@ In 1997 the R Core Group (which includes S programmers) was created.
 
 * Subset R objects using the "[", "[[", and "$" operators and logical vectors
 * Describe the explicit coercion feature of R
+
+Explicit coercion converts all values in a vector/list/data frame/matrix to a specified class. Explicit coercion commands include as.integer, as.character, as.logical, as.complex and as.numeric. 
+
 * Remove missing (NA) values from a vector
+]]]
+| WRITE FUNCTION | READ FUNCTION |
+----------------------------------
+| write.table | read.table |
