@@ -63,3 +63,28 @@ Lexical scoping pulls the value from the calling environment, while lexical scop
 !!R contains some interesting functions for optimization such as **optim**, **nlm** and **optimize**. These take in a vector of parameters as arguments, then optimize that function based on those parameters.
 
 ***Remember to complete the tutorial before undertaking the programming assignment***
+
+###R standards
+**These are aimed at improving readibility and ease-of-use for other people**
+
+1) Write your code in a **text editor** and save as a **text** file;
+2) Always **indent** your code: space different blocks of code to the right (hotly debated topic);
+3) Limit the width of your code to ~80 columns of text;
+*R STUDIO HAS SETTINGS FOR BOTH INDENT SIZE AND NUMBER OF COLUMNS IN 'OPTIONS'*
+4) Limit the length of your function. Use each function for a certain type of activity. Try to fit it in one page of code. Separate functions also make it easier for you to find bugs in a sequence of functions using debugger(), traceback() or profiler(). 
+
+###Dates and Times in R
+
+**Dates** are represented by the *Date* class (YYYY-MM-DD), and stored internally as the number of days since 1970-01-01
+**Times** are represented by the *POSIXct* and *POSIXlt* classes, and are stored internally as the number of seconds since 1970-01-01
+
+Strings can be coerced into dates using the as.Date() function. **Dates are stored as objects of the date class**
+
+The following functions work on Date, POSIXct and POSIXlt objects:
+weekdays()
+months()
+quarters()
+
+Sys.time() prints out the current time.
+POSIXct is just one number, that is, the number of seconds since 1970-01-01. POSIXlt is a list with categories that can be traced with the dollar sign. 
+strptime() converts a date saved as a character string to a date/time object. However, you'll need to specify the format as an argument to the function. The format symbols can be found in the strptime() help page. 
