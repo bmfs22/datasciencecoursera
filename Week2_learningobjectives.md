@@ -88,3 +88,5 @@ quarters()
 Sys.time() prints out the current time.
 POSIXct is just one number, that is, the number of seconds since 1970-01-01. POSIXlt is a list with categories that can be traced with the dollar sign. 
 strptime() converts a date saved as a character string to a date/time object. However, you'll need to specify the format as an argument to the function. The format symbols can be found in the strptime() help page. 
+
+***Cool lesson: "sapply" is great for quickly extracting info about columns in a data.frame, such as class names. Yay!***
