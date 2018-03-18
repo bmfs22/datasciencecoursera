@@ -90,4 +90,4 @@ POSIXct is just one number, that is, the number of seconds since 1970-01-01. POS
 strptime() converts a date saved as a character string to a date/time object. However, you'll need to specify the format as an argument to the function. The format symbols can be found in the strptime() help page. 
 
 ***Cool lesson #1: "sapply" is great for quickly extracting info about columns in a data.frame, such as class names. Yay!***
-***Cool lesson #2: it's possible to time function execution in R for optimization purposes.*** Here's an useful reference: https://stats.idre.ucla.edu/r/faq/how-can-i-time-my-code/
+***Cool lesson #2: it's possible to time function execution in R for optimization purposes.*** Here's an useful reference: https://stats.idre.ucla.edu/r/faq/how-can-i-time-my-code/. The proc.time() function has to be embedded in the function it's supposed to time and, since it returns the current time as value, you'll have to subtract the end time from the starting time of the function. system.time(), on the other hand, takes the function/expression whose time you're seeking to evaluate as an argument and returns the time elapsed. 
