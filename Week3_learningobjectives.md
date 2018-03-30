@@ -26,3 +26,13 @@ sapply will coerce it to a vector.
 ### split: splits objects into subpieces, useful with above functions. NOTE: Split-apply-combine strategy for Data Analysis.
 
 anonymous functions: don't have names but can be generated 'on the go'. This function only exists in the context of a loop function. 
+## Debugging Tools
+### Bug indicators
+* **Message**: 
+* **Warning** : indicates unusual outcomes or behavior for a function (albeit not a fatal one). This helps you identify incompatibilities between values passed as arguments and their function, or misuse of values. 
+* **Error**: indicates that a problem in the code
+
+### Tools
+* **Traceback**: goes through the function call stack in order to determine which function(s) returned an error. Doesn't return anything if there's no error. Also, most importantly, *traceback gives you the latest error*. 
+* **Debug**: flags a function for scrutiny in debug mode. Prints the entire function, so it might not be the best option for long codes. Typing "n" in the debugger/browser moves them prompt to the following line of code.  
+* **Browser**: function that halts another function and opens it up in debug mode when called.
