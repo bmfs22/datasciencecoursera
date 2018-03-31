@@ -1,9 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This file contains the functions makeCacheMatrix - a builder function -
+## and cacheSolve - a function for calculating the inverse of a matrix.
+## The following functions cache their respective values in order to spare computation. 
 
-## Write a short comment describing this function
-## The "makeCacheMatrix" function creates a special matrix with a cacheable 
-## 'inverse' attribute called 'inv'. 
+## The "makeCacheMatrix" function creates a dim 4 list with the items 'set' and get'
+## for storing and fetching a matrix and 'setinv' and 'getinv' for storing and fetching
+## the inverse of the same matrix.
+ 
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -18,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The cacheSolve function calls getinv() on 'x' (a matrix) and checks whether
+## the inverse of 'x' is already cached. If so, it returns a message followed 
+## the cached inverse; if not, it calculates the inverse using solve(), caches it,
+## and prints it out.
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
